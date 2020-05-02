@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import ResumeHeader from "./Header";
-import ResumeBodyMenu from "./Body";
+import ResumeBodyMenu from "./BodyMenu";
 
 export default class BasePage extends Component {
     render() {

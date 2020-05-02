@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import Avatar from "avataaars";
-import {Grid, Card, Menu} from 'semantic-ui-react'
+import {Grid, Card} from 'semantic-ui-react'
 
 const headerCenteringStyle = {
   marginLeft: 'auto',
