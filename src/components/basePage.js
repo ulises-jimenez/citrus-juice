@@ -1,6 +1,5 @@
 import React, {Component} from 'react';
 import ResumeHeader from "./Header";
-import Avatar from "avataaars";
 
 export default class BasePage extends Component {
     render() {
@@ -19,7 +18,7 @@ export default class BasePage extends Component {
                           skinColor='Pale'
                           meta='Me'
                           description={'I\'m a software and data enthusiast 🤷🏻‍♂. Why not both? 🌮🌯️'}
-            ></ResumeHeader>
+            />
         );
     }
 }
