@@ -1,5 +1,10 @@
 import React, {Component} from 'react';
-import {Menu, Grid} from 'semantic-ui-react'
+import {Menu, Container} from 'semantic-ui-react'
+
+const bodyMenuCenteringStyle = {
+  marginLeft: 'auto',
+  marginRight: 'auto',
+};
 
 export default class ResumeBodyMenu extends Component {
     constructor(props) {
@@ -20,24 +25,17 @@ export default class ResumeBodyMenu extends Component {
 
     render() {
         return (
-            <Grid stackable>
-                <Grid.Row columns={3}>
-                    <Grid.Column>
-                    </Grid.Column>
-                    <Grid.Column textAlign='center'>
-                        <Menu compact
-                              pointing
-                              secondary
-                              stackable
-                              color='violet'
-                        >
-                            {this.getMenuItems()}
-                        </Menu>
-                    </Grid.Column>
-                    <Grid.Column>
-                    </Grid.Column>
-                </Grid.Row>
-            </Grid>
+            <Container textAlign='center'
+            >
+                    <Menu compact
+                          pointing
+                          secondary
+                          stackable
+                          color='violet'
+                    >
+                        {this.getMenuItems()}
+                    </Menu>
+            </Container>
         );
     }
 }
