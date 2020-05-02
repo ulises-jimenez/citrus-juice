@@ -5,7 +5,7 @@ import 'semantic-ui-css/semantic.min.css'
 
 function App() {
   return (
-      <BasePage></BasePage>
+      <BasePage/>
   );
 }
 

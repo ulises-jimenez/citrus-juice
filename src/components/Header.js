@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import Avatar from "avataaars";
-import {Grid, Card} from 'semantic-ui-react'
+import {Grid, Card, Menu} from 'semantic-ui-react'
 
 const headerCenteringStyle = {
   marginLeft: 'auto',
@@ -19,7 +19,7 @@ export default class ResumeHeader extends Component {
                 <Grid.Row columns={3}>
                     <Grid.Column>
                     </Grid.Column>
-                    <Grid.Column>
+                    <Grid.Column textAlign='center'>
                         <Card fluid={true}
                               centered={true}
                               raised={true}
