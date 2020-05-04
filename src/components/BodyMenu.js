@@ -1,6 +1,10 @@
 import React, {Component} from 'react';
 import {Menu, Container} from 'semantic-ui-react'
 
+const bottomBodyMenuMarginStyle = {
+    marginBottom: '20px'
+};
+
 
 export default class ResumeBodyMenu extends Component {
 
@@ -18,6 +22,7 @@ export default class ResumeBodyMenu extends Component {
     render() {
         return (
             <Container textAlign='center'
+                       style={bottomBodyMenuMarginStyle}
             >
                     <Menu compact
                           pointing

@@ -3,6 +3,7 @@ import ResumeHeader from "./Header";
 import ResumeBodyMenu from "./BodyMenu";
 import ResumeBody from "./Body";
 
+
 export default class BasePage extends Component {
     constructor(props) {
         super(props);
@@ -32,7 +33,7 @@ export default class BasePage extends Component {
                               mouthType='Grimace'
                               skinColor='Pale'
                               meta='Me'
-                              description={'I\'m a software and data enthusiast 🤷🏻‍♂. Why not both? 🌮🌯️'}
+                              description={'I\'m a software and data enthusiast. 🤷🏻‍♂ Why not both? 🌮🌯️'}
                 />
                 <ResumeBodyMenu menuOptions={['Web Projects', 'Professional Experience', 'Education']}
                                 activeSection={this.state.bodyActiveSection}
