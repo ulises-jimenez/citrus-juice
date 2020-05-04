@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
-import {Grid, Card} from 'semantic-ui-react'
+import {Grid} from 'semantic-ui-react'
 import ProjectItem from "./WebProjectItems";
+import JobItem from "./WorkItems";
 
 
 export default class ResumeBody extends Component {
@@ -13,7 +14,7 @@ export default class ResumeBody extends Component {
             )
         } else if (this.props.activeSection === 'Professional Experience') {
             return (
-                <ProjectItem imgSrc='birds.jpg'
+                <JobItem
                 />
             )
         } else if (this.props.activeSection === 'Education') {
@@ -28,13 +29,11 @@ export default class ResumeBody extends Component {
         return (
             <Grid stackable
             >
-                <Grid.Row columns={3}>
+                <Grid.Row columns={2}>
                     <Grid.Column width={3}>
                     </Grid.Column>
                     <Grid.Column width={10}>
                         {this.getBodyText()}
-                    </Grid.Column>
-                    <Grid.Column width={3}>
                     </Grid.Column>
                 </Grid.Row>
             </Grid>

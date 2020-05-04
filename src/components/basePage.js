@@ -9,7 +9,7 @@ export default class BasePage extends Component {
         super(props);
         this.itemClick = this.itemClick.bind(this);
         this.state = {
-            bodyActiveSection: 'Web Projects'
+            bodyActiveSection: 'Professional Experience'
         };
     }
 
