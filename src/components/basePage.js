@@ -4,6 +4,18 @@ import ResumeBodyMenu from "./BodyMenu";
 import ResumeBody from "./Body";
 
 export default class BasePage extends Component {
+    constructor(props) {
+        super(props);
+        this.itemClick = this.itemClick.bind(this);
+        this.state = {
+            bodyActiveSection: 'Web Projects'
+        };
+    }
+
+    itemClick(name) {
+        this.setState({bodyActiveSection: name});
+    }
+
     render() {
         return (
             <div>
@@ -22,11 +34,13 @@ export default class BasePage extends Component {
                               meta='Me'
                               description={'I\'m a software and data enthusiast 🤷🏻‍♂. Why not both? 🌮🌯️'}
                 />
-                <ResumeBodyMenu menuOptions={['Web Projects', 'Professional Experience', 'education']}
-                            activeSection='Web Projects'
+                <ResumeBodyMenu menuOptions={['Web Projects', 'Professional Experience', 'Education']}
+                                activeSection={this.state.bodyActiveSection}
+                                onMenuChange={this.itemClick}
                 />
-                <ResumeBody/>
+                <ResumeBody activeSection={this.state.bodyActiveSection}
+                />
             </div>
-    );
+        );
     }
-    }
+}

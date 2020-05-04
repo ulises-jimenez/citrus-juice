@@ -1,25 +1,17 @@
 import React, {Component} from 'react';
 import {Menu, Container} from 'semantic-ui-react'
 
-const bodyMenuCenteringStyle = {
-  marginLeft: 'auto',
-  marginRight: 'auto',
-};
 
 export default class ResumeBodyMenu extends Component {
-    constructor(props) {
-        super(props);
-        this.state = props;
-    }
 
-    itemClick = (e, {name}) => this.setState({activeSection: name});
+    handleItemClick = (e, { name }) => this.props.onMenuChange(name);
 
     getMenuItems() {
-        return this.state.menuOptions.map((resumeSection, index) =>
+        return this.props.menuOptions.map((resumeSection, index) =>
             <Menu.Item key={index}
                        name={resumeSection}
-                       active={this.state.activeSection === resumeSection}
-                       onClick={this.itemClick}
+                       active={this.props.activeSection === resumeSection}
+                       onClick={this.handleItemClick}
             />);
     }
 
