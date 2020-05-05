@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import {Grid} from 'semantic-ui-react'
 import ProjectItem from "./WebProjectItems";
 import JobItem from "./WorkItems";
+import EducationItem from "./EducationItems";
 
 
 export default class ResumeBody extends Component {
@@ -19,7 +20,7 @@ export default class ResumeBody extends Component {
             )
         } else if (this.props.activeSection === 'Education') {
             return (
-                <ProjectItem imgSrc='headphones.jpg'
+                <EducationItem
                 />
             )
         }

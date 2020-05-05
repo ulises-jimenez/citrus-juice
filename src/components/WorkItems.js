@@ -2,7 +2,6 @@ import React, {Component} from 'react';
 import {Item, Segment, Flag, Icon, Popup} from 'semantic-ui-react'
 
 const imageCenteringStyle = {
-    // marginTop: 'auto',
     marginBottom: 'auto'
 };
 
@@ -39,10 +38,7 @@ export default class JobItem extends Component {
                                 time.
                             </Segment>
                             <Segment>
-                                <strong>• Price Optimization Application <Popup
-                                    trigger={<Icon name='question circle outline' color='violet' size='large'/>}
-                                    content='More Info Here!'
-                                /></strong> - Created application to monitor
+                                <strong> Price Optimization Application</strong> - Created application to monitor
                                 price discrepancies among a 5000+ product portfolio spread out across 80+ web shops
                                 and multiple currencies. Automated Alerts and tools help product managers to find
                                 price discrepancies and correct them
