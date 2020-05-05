@@ -29,11 +29,13 @@ export default class ResumeBody extends Component {
         return (
             <Grid stackable
             >
-                <Grid.Row columns={2}>
-                    <Grid.Column width={3}>
+                <Grid.Row columns={3}>
+                    <Grid.Column width={4}>
                     </Grid.Column>
-                    <Grid.Column width={10}>
+                    <Grid.Column width={8}>
                         {this.getBodyText()}
+                    </Grid.Column>
+                    <Grid.Column width={4}>
                     </Grid.Column>
                 </Grid.Row>
             </Grid>
