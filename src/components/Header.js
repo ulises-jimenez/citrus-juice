@@ -16,7 +16,7 @@ export default class ResumeHeader extends Component {
     getHeaderIconInfo() {
         return (
             <>
-                <p>Hover over these purple info icons to get more details about something</p>
+                <p>These purple icons contain more information. For example</p>
                 <Divider/>
                 <strong>I mostly work in...</strong>
                 <Divider/>
@@ -30,11 +30,17 @@ export default class ResumeHeader extends Component {
                     <Icon name='database' size='large'/> SQL
                 </p>
                 <p>
+                    <Icon name='chevron right' size='large'/>bash
+                </p>
+                <p>
                     <Icon name='linux' size='large'/> Linux
                 </p>
                 <Divider/>
-                <strong>But I have experience in...</strong>
+                <strong>But I also have experience in...</strong>
                 <Divider/>
+                <p>
+                    <Icon name='server' size='large'/> Devops
+                </p>
                 <p>
                     <Icon name='apple' size='large'/> iOS
                 </p>
