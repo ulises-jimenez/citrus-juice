@@ -1,16 +1,54 @@
 import React, {Component} from 'react';
 import Avatar from "avataaars";
-import {Grid, Card} from 'semantic-ui-react'
+import {Grid, Card, Icon, Popup, Divider} from 'semantic-ui-react'
 
 const headerCenteringStyle = {
-  marginLeft: 'auto',
-  marginRight: 'auto',
+    marginLeft: 'auto',
+    marginRight: 'auto',
 };
 
 export default class ResumeHeader extends Component {
     constructor(props) {
         super(props);
         this.state = props;
+    }
+
+    getHeaderIconInfo() {
+        return (
+            <>
+                <p>Hover over these purple info icons to get more details about something</p>
+                <Divider/>
+                <strong>I mostly work in...</strong>
+                <Divider/>
+                <p>
+                    <Icon name='python' size='large'/> Python
+                </p>
+                <p>
+                    <Icon name='js' size='large'/> JS
+                </p>
+                <p>
+                    <Icon name='database' size='large'/> SQL
+                </p>
+                <p>
+                    <Icon name='linux' size='large'/> Linux
+                </p>
+                <Divider/>
+                <strong>But I have experience in...</strong>
+                <Divider/>
+                <p>
+                    <Icon name='apple' size='large'/> iOS
+                </p>
+                <p>
+                    <Icon name='android' size='large'/> Android
+                </p>
+                <p>
+                    <Icon name='react' size='large'/> React
+                </p>
+                <p>
+                    <Icon name='vuejs' size='large'/> Vuejs
+                </p>
+            </>
+        )
     }
 
     render() {
@@ -24,7 +62,13 @@ export default class ResumeHeader extends Component {
                               centered={true}
                               raised={true}
                         >
-                            <h2 style={headerCenteringStyle}>{this.state.name}</h2>
+                            <h2 style={headerCenteringStyle}>{this.state.name}<Popup
+                                trigger={<Icon name='info circle' size='small' color='violet'/>}
+                            >
+                                {this.getHeaderIconInfo()}
+                            </Popup>
+
+                            </h2>
                             <Avatar
                                 avatarStyle={this.state.avatarStyle}
                                 topType={this.state.topType}

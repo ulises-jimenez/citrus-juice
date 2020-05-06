@@ -17,8 +17,13 @@ export default class JobItem extends Component {
                                 style={imageCenteringStyle}
                     />
                     <Item.Content>
-                        <Item.Header content='Lead Data & Analytics Engineer'
-                        />
+                        <Item.Header>
+                            Lead Data & Analytics Engineer
+                            <Popup
+                                trigger={<Icon name='info circle' color='violet'/>}
+                                content='Hover over these to see which tech was used'
+                            />
+                        </Item.Header>
                         <Item.Meta><Flag name='de'/> Berlin • November 2018 - Present</Item.Meta>
                         <Item.Description>
                             <p>
@@ -27,9 +32,9 @@ export default class JobItem extends Component {
                             <Segment>
                                 <strong>• Data Engineering</strong> – Created and implemented computing, reporting,
                                 and
-                                ETL infrastructure in order to automate all report generation and data refreshing.
-                                Led
-                                to a reduction in 1000s of man hours used on repetitive reporting tasks.
+                                ETL infrastructure in order to automate all report generation, data refreshing, and
+                                dashboard infrastructure. Led to a reduction in 1000s of man hours used on repetitive
+                                reporting tasks.
                             </Segment>
                             <Segment>
                                 <strong>• Customer Retention and Lifecycle Modeling</strong> - Implemented
@@ -90,10 +95,10 @@ export default class JobItem extends Component {
                         <Item.Meta><Flag name='de'/> Berlin • August 2015 - April 2016</Item.Meta>
                         <Item.Description>
                             <p>
-                                <a href='https://www.kayak.com/'>Kayak</a>
+                                <a href='https://www.kayak.com/'>KAYAK</a>
                             </p>
                             <Segment>
-                                <strong>• Automated Bidding Algorithms</strong> – Worked on writing etc pipelines, unit
+                                <strong>• Automated Bidding Algorithms</strong> – Worked on writing ETL pipelines, unit
                                 tests, anomaly detection, and algorithm development in order to automatically manage
                                 AdWords accounts
                             </Segment>

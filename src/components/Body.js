@@ -10,7 +10,7 @@ export default class ResumeBody extends Component {
     getBodyText() {
         if (this.props.activeSection === 'Web Projects') {
             return (
-                <ProjectItem imgSrc='uliandfreja.jpg'
+                <ProjectItem
                 />
             )
         } else if (this.props.activeSection === 'Professional Experience') {
