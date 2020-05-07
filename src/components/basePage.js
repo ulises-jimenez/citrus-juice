@@ -1,7 +1,8 @@
-import React, {Component} from 'react';
+import React, {Component, createRef} from 'react';
 import ResumeHeader from "./Header";
 import ResumeBodyMenu from "./BodyMenu";
 import ResumeBody from "./Body";
+import {Sticky} from "semantic-ui-react";
 
 
 export default class BasePage extends Component {
@@ -13,13 +14,15 @@ export default class BasePage extends Component {
         };
     }
 
+    contextRef = createRef();
+
     itemClick(name) {
         this.setState({bodyActiveSection: name});
     }
 
     render() {
         return (
-            <div>
+            <div ref={this.contextRef}>
                 <ResumeHeader name="Ulises Jimenez"
                               avatarStyle='Transparent'
                               topType='ShortHairDreads01'
@@ -35,10 +38,12 @@ export default class BasePage extends Component {
                               meta='Me'
                               description={'I\'m a software and data enthusiast 🤷🏻‍♂ Why not both? 🌮🌯️'}
                 />
-                <ResumeBodyMenu menuOptions={['Web Projects', 'Professional Experience', 'Education']}
-                                activeSection={this.state.bodyActiveSection}
-                                onMenuChange={this.itemClick}
-                />
+                <Sticky context={this.contextRef}>
+                    <ResumeBodyMenu menuOptions={['Web Projects', 'Professional Experience', 'Education']}
+                                    activeSection={this.state.bodyActiveSection}
+                                    onMenuChange={this.itemClick}
+                    />
+                </Sticky>
                 <ResumeBody activeSection={this.state.bodyActiveSection}
                 />
             </div>
