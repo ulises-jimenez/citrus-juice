@@ -1,11 +1,68 @@
 import React, {Component} from 'react';
-import {Item, Segment, Flag, Icon, Popup} from 'semantic-ui-react'
+import {Item, Segment, Flag, Icon, Popup, Divider, List, Grid} from 'semantic-ui-react'
 
 const imageCenteringStyle = {
     marginBottom: 'auto'
 };
 
 export default class JobItem extends Component {
+
+    getBBGTechPopup() {
+        return (
+            <Popup
+                trigger={<Icon name='info circle' color='violet'/>}
+                wide='very'
+            >
+                <Grid stackable>
+                    <Grid.Row columns={3}>
+                        <Grid.Column>
+                            <Divider horizontal>{<Icon name='python' size='large'/>}</Divider>
+                            <List>
+                                <List.Item>
+                                    <List.Icon name='code'/>
+                                    <List.Content>Django</List.Content>
+                                </List.Item>
+                                <List.Item>
+                                    <List.Icon name='code'/>
+                                    <List.Content>Flask</List.Content>
+                                </List.Item>
+                                <List.Item>
+                                    <List.Icon name='code'/>
+                                    <List.Content>Airflow</List.Content>
+                                </List.Item>
+                                <List.Item>
+                                    <List.Icon name='code'/>
+                                    <List.Content>Pandas</List.Content>
+                                </List.Item>
+                            </List>
+                        </Grid.Column>
+                        <Grid.Column>
+                            <Divider horizontal>{<Icon name='js' size='large'/>}</Divider>
+                            <List>
+                                <List.Item>
+                                    <List.Icon name='vuejs'/>
+                                    <List.Content>Vuejs</List.Content>
+                                </List.Item>
+                            </List>
+                        </Grid.Column>
+                        <Grid.Column>
+                            <Divider horizontal>{<Icon name='wrench' size='large'/>}</Divider>
+                            <List>
+                                <List.Item>
+                                    <List.Icon name='code branch'/>
+                                    <List.Content>git</List.Content>
+                                </List.Item>
+                                <List.Item>
+                                    <List.Icon name='code'/>
+                                    <List.Content>R</List.Content>
+                                </List.Item>
+                            </List>
+                        </Grid.Column>
+                    </Grid.Row>
+                </Grid>
+            </Popup>
+        )
+    }
 
     createJobIndividualItems() {
         return (
@@ -19,10 +76,7 @@ export default class JobItem extends Component {
                     <Item.Content>
                         <Item.Header>
                             Lead Data & Analytics Engineer
-                            <Popup
-                                trigger={<Icon name='info circle' color='violet'/>}
-                                content='Hover over these to see which tech was used'
-                            />
+                            {this.getBBGTechPopup()}
                         </Item.Header>
                         <Item.Meta><Flag name='de'/> Berlin • November 2018 - Present</Item.Meta>
                         <Item.Description>

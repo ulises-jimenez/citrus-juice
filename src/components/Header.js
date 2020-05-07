@@ -16,7 +16,7 @@ export default class ResumeHeader extends Component {
     getHeaderIconInfo() {
         return (
             <>
-                <p>These purple icons contain more information. For example</p>
+                <p><strong>Hover over these to see which tech was used. For example</strong></p>
                 <Divider/>
                 <strong>I mostly work in...</strong>
                 <Divider/>
@@ -30,7 +30,7 @@ export default class ResumeHeader extends Component {
                     <Icon name='database' size='large'/> SQL
                 </p>
                 <p>
-                    <Icon name='chevron right' size='large'/>bash
+                    <Icon name='terminal' size='large'/>bash
                 </p>
                 <p>
                     <Icon name='linux' size='large'/> Linux

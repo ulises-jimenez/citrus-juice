@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {Item, Segment, Flag, Icon, Popup} from 'semantic-ui-react'
+import {Item, Segment, Flag} from 'semantic-ui-react'
 
 
 const imageCenteringStyle = {
