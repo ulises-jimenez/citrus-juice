@@ -25,6 +25,8 @@ export default class ResumeBodyMenu extends Component {
                        style={bottomBodyMenuMarginStyle}
             >
                 <Menu compact
+                      secondary
+                      pointing
                       stackable
                       color='violet'
                 >
