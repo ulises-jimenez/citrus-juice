@@ -39,14 +39,14 @@ export default class JobItem extends Component {
                             <Segment>
                                 <strong>• Customer Retention and Lifecycle Modeling</strong> - Implemented
                                 infrastructure to monitor
-                                past purchase behaviour and predict probability of future purchase behavior across
-                                time.
+                                past purchase behavior and predict probability of future purchase behavior and future
+                                churn behavior.
                             </Segment>
                             <Segment>
                                 <strong> Price Optimization Application</strong> - Created application to monitor
                                 price discrepancies among a 5000+ product portfolio spread out across 80+ web shops
                                 and multiple currencies. Automated Alerts and tools help product managers to find
-                                price discrepancies and correct them
+                                price discrepancies and recommends price changes based on product demand.
                             </Segment>
                         </Item.Description>
                     </Item.Content>
@@ -67,13 +67,14 @@ export default class JobItem extends Component {
                             </p>
                             <Segment>
                                 <strong>• Automated Bidding Algorithms</strong> – Authored several Google Ads bidding
-                                algorithms and end to end data pipelines taking into account cost per click bid history
-                                using measures related to user behavior
+                                algorithms and end to end data pipelines taking into account past bid history and
+                                measures related to user behavior
                             </Segment>
                             <Segment>
                                 <strong>• Customer Lifetime Value Modeling</strong> – Implemented regression and
                                 classification models to identify channels where high lifetime value customers where
-                                being acquired and adjust spend programmatically
+                                being acquired and adjust spend programmatically. Created mechanisms to identify ‘at
+                                risk’ customers to decrease churn rate by ~20%
                             </Segment>
                             <Segment>
                                 <strong>• Analysis Automation</strong> – Created dashboards using Django to keep
