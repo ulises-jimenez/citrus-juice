@@ -8,7 +8,7 @@ const bottomBodyMenuMarginStyle = {
 
 export default class ResumeBodyMenu extends Component {
 
-    handleItemClick = (e, { name }) => this.props.onMenuChange(name);
+    handleItemClick = (e, {name}) => this.props.onMenuChange(name);
 
     getMenuItems() {
         return this.props.menuOptions.map((resumeSection, index) =>
@@ -24,14 +24,12 @@ export default class ResumeBodyMenu extends Component {
             <Container textAlign='center'
                        style={bottomBodyMenuMarginStyle}
             >
-                    <Menu compact
-                          pointing
-                          secondary
-                          stackable
-                          color='violet'
-                    >
-                        {this.getMenuItems()}
-                    </Menu>
+                <Menu compact
+                      stackable
+                      color='violet'
+                >
+                    {this.getMenuItems()}
+                </Menu>
             </Container>
         );
     }
