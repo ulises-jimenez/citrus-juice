@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import Avatar from "avataaars";
-import {Grid, Card, Icon, Popup, Divider} from 'semantic-ui-react'
+import {Grid, Card, Icon, Popup, Divider, Flag} from 'semantic-ui-react'
+import {Link, BrowserRouter as Router} from "react-router-dom";
 
 const headerCenteringStyle = {
     marginLeft: 'auto',
@@ -91,7 +92,28 @@ export default class ResumeHeader extends Component {
                             />
                             <Card.Content>
                                 <Card.Header
-                                    textAlign={"center"}>{this.state.description}</Card.Header>
+                                    textAlign={"center"}>
+                                    {this.state.description}
+                                </Card.Header>
+                                <Card.Description>
+                                    <p>
+                                        Download the paper version&nbsp;<Router>
+                                        <Link to='ulises_resume_2020.pdf'
+                                              target="_blank"
+                                              download>
+                                            here!
+                                        </Link>
+                                    </Router>
+                                    </p>
+                                    <p>
+                                        <a href='mailto:ulises@ulisesjimenez.com'>
+                                            ulises@ulisesjimenez.com
+                                        </a>
+                                    </p>
+                                    <p>
+                                        <Flag name='us'/>US Citizen
+                                    </p>
+                                </Card.Description>
                             </Card.Content>
                         </Card>
                     </Grid.Column>

@@ -26,7 +26,8 @@ export default class ProjectItem extends Component {
                             <Segment>
                                 Fun little app that can serve as a baby monitor. Runs on iOS, Android and in the
                                 browser (experimental). Uses async python and WebRTC to link video and audio across
-                                different platforms
+                                different platforms. Has noise detection alerts and background audio to let you browse
+                                the web or whatever while still being alerted to noise.
                             </Segment>
                         </Item.Description>
                     </Item.Content>

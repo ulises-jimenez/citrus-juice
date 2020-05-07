@@ -33,7 +33,7 @@ export default class BasePage extends Component {
                               mouthType='Grimace'
                               skinColor='Pale'
                               meta='Me'
-                              description={'I\'m a software and data enthusiast 🤷🏻‍♂ Why not both? 🌮🌯️'}
+                              description={'I\'m a software and data enthusiast 🤷🏻‍♂ ¿Por que no los dos? 🌮🌮'}
                 />
                 <ResumeBodyMenu menuOptions={['Web Projects', 'Professional Experience', 'Education']}
                                 activeSection={this.state.bodyActiveSection}
