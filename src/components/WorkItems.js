@@ -7,6 +7,138 @@ const imageCenteringStyle = {
 
 export default class JobItem extends Component {
 
+    getGeophyPopup() {
+        return (
+            <Popup
+                trigger={<Icon name='info circle' color='violet'/>}
+                wide='very'
+            >
+                <Grid stackable>
+                    <Grid.Row columns={1}>
+                        <Grid.Column>
+                            <Divider horizontal>{<Icon name='wrench' size='large'/>}</Divider>
+                            <List>
+                                <List.Item>
+                                    <List.Icon name='python'/>
+                                    <List.Content>Python</List.Content>
+                                </List.Item>
+                                <List.Item>
+                                    <List.Icon name='code'/>
+                                    <List.Content>R</List.Content>
+                                </List.Item>
+                            </List>
+                        </Grid.Column>
+                    </Grid.Row>
+                </Grid>
+            </Popup>
+        )
+    }
+
+
+    getKAYAKPopup() {
+        return (
+            <Popup
+                trigger={<Icon name='info circle' color='violet'/>}
+                wide='very'
+            >
+                <Grid stackable>
+                    <Grid.Row columns={2}>
+                        <Grid.Column>
+                            <Divider horizontal>{<Icon name='python' size='large'/>}</Divider>
+                            <List>
+                                <List.Item>
+                                    <List.Icon name='code'/>
+                                    <List.Content>Django</List.Content>
+                                </List.Item>
+                                <List.Item>
+                                    <List.Icon name='code'/>
+                                    <List.Content>Airflow</List.Content>
+                                </List.Item>
+                                <List.Item>
+                                    <List.Icon name='code'/>
+                                    <List.Content>Pandas</List.Content>
+                                </List.Item>
+                            </List>
+                        </Grid.Column>
+                        <Grid.Column>
+                            <Divider horizontal>{<Icon name='wrench' size='large'/>}</Divider>
+                            <List>
+                                <List.Item>
+                                    <List.Icon name='database'/>
+                                    <List.Content>Hive</List.Content>
+                                </List.Item>
+                                <List.Item>
+                                    <List.Icon name='database'/>
+                                    <List.Content>Vertica</List.Content>
+                                </List.Item>
+                                <List.Item>
+                                    <List.Icon name='database'/>
+                                    <List.Content>SQL</List.Content>
+                                </List.Item>
+                                <List.Item>
+                                    <List.Icon name='code branch'/>
+                                    <List.Content>git</List.Content>
+                                </List.Item>
+                                <List.Item>
+                                    <List.Icon name='js'/>
+                                    <List.Content>JS</List.Content>
+                                </List.Item>
+                            </List>
+                        </Grid.Column>
+                    </Grid.Row>
+                </Grid>
+            </Popup>
+        )
+    }
+
+    getNu3Popup() {
+        return (
+            <Popup
+                trigger={<Icon name='info circle' color='violet'/>}
+                wide='very'
+            >
+                <Grid stackable>
+                    <Grid.Row columns={2}>
+                        <Grid.Column>
+                            <Divider horizontal>{<Icon name='python' size='large'/>}</Divider>
+                            <List>
+                                <List.Item>
+                                    <List.Icon name='code'/>
+                                    <List.Content>Django</List.Content>
+                                </List.Item>
+                                <List.Item>
+                                    <List.Icon name='code'/>
+                                    <List.Content>Airflow</List.Content>
+                                </List.Item>
+                                <List.Item>
+                                    <List.Icon name='code'/>
+                                    <List.Content>Pandas</List.Content>
+                                </List.Item>
+                            </List>
+                        </Grid.Column>
+                        <Grid.Column>
+                            <Divider horizontal>{<Icon name='wrench' size='large'/>}</Divider>
+                            <List>
+                                <List.Item>
+                                    <List.Icon name='code branch'/>
+                                    <List.Content>git</List.Content>
+                                </List.Item>
+                                <List.Item>
+                                    <List.Icon name='database'/>
+                                    <List.Content>SQL</List.Content>
+                                </List.Item>
+                                <List.Item>
+                                    <List.Icon name='js'/>
+                                    <List.Content>JS</List.Content>
+                                </List.Item>
+                            </List>
+                        </Grid.Column>
+                    </Grid.Row>
+                </Grid>
+            </Popup>
+        )
+    }
+
     getBBGTechPopup() {
         return (
             <Popup
@@ -55,6 +187,14 @@ export default class JobItem extends Component {
                                 <List.Item>
                                     <List.Icon name='code'/>
                                     <List.Content>R</List.Content>
+                                </List.Item>
+                                <List.Item>
+                                    <List.Icon name='database'/>
+                                    <List.Content>SQL</List.Content>
+                                </List.Item>
+                                <List.Item>
+                                    <List.Icon name='server'/>
+                                    <List.Content>Ansible</List.Content>
                                 </List.Item>
                             </List>
                         </Grid.Column>
@@ -112,8 +252,10 @@ export default class JobItem extends Component {
                                 style={imageCenteringStyle}
                     />
                     <Item.Content>
-                        <Item.Header content='Data Science and Automation Lead'
-                        />
+                        <Item.Header>
+                            Data Science and Automation Lead
+                            {this.getNu3Popup()}
+                        </Item.Header>
                         <Item.Meta><Flag name='de'/> Berlin • May 2016 - October 2018</Item.Meta>
                         <Item.Description>
                             <p>
@@ -145,8 +287,10 @@ export default class JobItem extends Component {
                                 style={imageCenteringStyle}
                     />
                     <Item.Content>
-                        <Item.Header content='Data Scientist'
-                        />
+                        <Item.Header>
+                            Data Scientist
+                            {this.getKAYAKPopup()}
+                        </Item.Header>
                         <Item.Meta><Flag name='de'/> Berlin • August 2015 - April 2016</Item.Meta>
                         <Item.Description>
                             <p>
@@ -175,8 +319,10 @@ export default class JobItem extends Component {
                                 style={imageCenteringStyle}
                     />
                     <Item.Content>
-                        <Item.Header content='Analytics Intern'
-                        />
+                        <Item.Header>
+                            Analytics Intern
+                            {this.getGeophyPopup()}
+                        </Item.Header>
                         <Item.Meta><Flag name='nl'/> The Hague, The Netherlands • January 2015 - July 2015</Item.Meta>
                         <Item.Description>
                             <p>
