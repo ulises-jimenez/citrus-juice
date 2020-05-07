@@ -110,7 +110,6 @@ export default class JobItem extends Component {
                             <Segment>
                                 <strong>• Data Engineering</strong> – Created many end to end data pipelines so
                                 stakeholders could see daily or hourly updates on KPIs that impacted their projects
-
                             </Segment>
                         </Item.Description>
                     </Item.Content>
