@@ -224,11 +224,12 @@ export default class JobItem extends Component {
                                 <a href='https://www.berlin-brands-group.com/'>Berlin Brands Group GmbH</a>
                             </p>
                             <Segment>
-                                <strong>• Data Engineering</strong> – Created and implemented computing, reporting,
-                                and
-                                ETL infrastructure in order to automate all report generation, data refreshing, and
-                                dashboard infrastructure. Led to a reduction in 1000s of man hours used on repetitive
-                                reporting tasks.
+                                <strong>• Data Engineering</strong> – Established new data science team to create and
+                                implement computing, reporting, and ETL infrastructure in order to automate all report
+                                generation and data refreshing across all teams. Led to a reduction in 1000s of man
+                                hours used on repetitive reporting tasks across the company and live hourly update
+                                capability on metrics such as customer activity, orders, advertising spend, and customer
+                                churn.
                             </Segment>
                             <Segment>
                                 <strong>• Customer Retention and Lifecycle Modeling</strong> - Implemented
@@ -237,7 +238,7 @@ export default class JobItem extends Component {
                                 churn behavior.
                             </Segment>
                             <Segment>
-                                <strong> Price Optimization Application</strong> - Created application to monitor
+                                <strong>• Price Optimization Application</strong> - Created application to monitor
                                 price discrepancies among a 5000+ product portfolio spread out across 80+ web shops
                                 and multiple currencies. Automated Alerts and tools help product managers to find
                                 price discrepancies and recommends price changes based on product demand.
