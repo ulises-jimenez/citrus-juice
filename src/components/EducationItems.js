@@ -58,7 +58,7 @@ export default class EducationItem extends Component {
                                 style={imageCenteringStyle}
                     />
                     <Item.Content>
-                        <Item.Header content={'Bishop O\'Dowd High School High School'}
+                        <Item.Header content={'Bishop O\'Dowd High School'}
                         />
                         <Item.Meta><Flag name='us'/> Oakland, CA • 2002 - 2006</Item.Meta>
                         <Item.Description>
