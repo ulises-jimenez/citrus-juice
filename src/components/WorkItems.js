@@ -221,7 +221,8 @@ export default class JobItem extends Component {
                         <Item.Meta><Flag name='de'/> Berlin • November 2018 - Present</Item.Meta>
                         <Item.Description>
                             <p>
-                                <a href='https://www.berlin-brands-group.com/'>Berlin Brands Group GmbH</a>
+                                <a href='https://www.berlin-brands-group.com/' target='_blank'
+                                   rel='noopener noreferrer'>Berlin Brands Group GmbH</a>
                             </p>
                             <Segment>
                                 <strong>• Data Engineering</strong> – Established new data science team to create and
@@ -260,7 +261,7 @@ export default class JobItem extends Component {
                         <Item.Meta><Flag name='de'/> Berlin • May 2016 - October 2018</Item.Meta>
                         <Item.Description>
                             <p>
-                                <a href='https://www.nu3.de/'>Nu3 GmbH</a>
+                                <a href='https://www.nu3.de/' target='_blank' rel='noopener noreferrer'>Nu3 GmbH</a>
                             </p>
                             <Segment>
                                 <strong>• Automated Bidding Algorithms</strong> – Authored several Google Ads bidding
@@ -295,7 +296,7 @@ export default class JobItem extends Component {
                         <Item.Meta><Flag name='de'/> Berlin • August 2015 - April 2016</Item.Meta>
                         <Item.Description>
                             <p>
-                                <a href='https://www.kayak.com/'>KAYAK</a>
+                                <a href='https://www.kayak.com/' target='_blank' rel='noopener noreferrer'>KAYAK</a>
                             </p>
                             <Segment>
                                 <strong>• Automated Bidding Algorithms</strong> – Worked on writing ETL pipelines, unit
@@ -327,7 +328,7 @@ export default class JobItem extends Component {
                         <Item.Meta><Flag name='nl'/> The Hague, The Netherlands • January 2015 - July 2015</Item.Meta>
                         <Item.Description>
                             <p>
-                                <a href='https://www.geophy.com/'>GeoPhy</a>
+                                <a href='https://www.geophy.com/' target='_blank' rel='noopener noreferrer'>GeoPhy</a>
                             </p>
                             <Segment>
                                 <strong>• Machine Learning</strong> – Implemented regression and classification models

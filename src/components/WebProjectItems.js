@@ -21,7 +21,8 @@ export default class ProjectItem extends Component {
                         />
                         <Item.Description>
                             <p>
-                                <a href='https://www.ulisesjimenez.com/'>Baby Phone</a>
+                                <a href='https://www.ulisesjimenez.com/' target='_blank' rel='noopener noreferrer'>Baby
+                                    Phone</a>
                             </p>
                             <Segment>
                                 Fun little app that can serve as a baby monitor. Runs on iOS, Android and in the

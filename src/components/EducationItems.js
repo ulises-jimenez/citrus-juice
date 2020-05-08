@@ -23,7 +23,8 @@ export default class EducationItem extends Component {
                         <Item.Meta><Flag name='de'/> Berlin, Germany • 2012 - 2014</Item.Meta>
                         <Item.Description>
                             <p>
-                                <a href='https://www.hwr-berlin.de/'>HWR Website</a>
+                                <a href='https://www.hwr-berlin.de/' target='_blank' rel='noopener noreferrer'>HWR
+                                    Website</a>
                             </p>
                             <Segment>
                                 <strong>Master of Science: International Finance</strong>
@@ -43,7 +44,8 @@ export default class EducationItem extends Component {
                         <Item.Meta><Flag name='us'/> Santa Cruz, CA • 2006 - 2011</Item.Meta>
                         <Item.Description>
                             <p>
-                                <a href='https://www.ucsc.edu/'>UCSC Website</a>
+                                <a href='https://www.ucsc.edu/' target='_blank' rel='noopener noreferrer'>UCSC
+                                    Website</a>
                             </p>
                             <Segment>
                                 <strong>Bachelor of Arts: Global Economics</strong>
@@ -63,7 +65,8 @@ export default class EducationItem extends Component {
                         <Item.Meta><Flag name='us'/> Oakland, CA • 2002 - 2006</Item.Meta>
                         <Item.Description>
                             <p>
-                                <a href='https://www.bishopodowd.org/'>Bishop O'Dowd Website</a>
+                                <a href='https://www.bishopodowd.org/' target='_blank' rel='noopener noreferrer'>Bishop
+                                    O'Dowd Website</a>
                             </p>
                         </Item.Description>
                     </Item.Content>
