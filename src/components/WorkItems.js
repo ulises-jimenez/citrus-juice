@@ -234,9 +234,10 @@ export default class JobItem extends Component {
                             </Segment>
                             <Segment>
                                 <strong>• Customer Retention and Lifecycle Modeling</strong> - Implemented
-                                infrastructure to monitor
-                                past purchase behavior and predict probability of future purchase behavior and future
-                                churn behavior.
+                                infrastructure to monitor past purchase behavior and predict probability of future
+                                purchase behavior and future churn behavior. Reduced churn rate by ~9% by implementing
+                                e-mail campaigns combined with targeted price reductions based on past purchasing
+                                behavior and implementing APIs used for a targeted pop up and voucher system.
                             </Segment>
                             <Segment>
                                 <strong>• Price Optimization Application</strong> - Created application to monitor
@@ -266,7 +267,8 @@ export default class JobItem extends Component {
                             <Segment>
                                 <strong>• Automated Bidding Algorithms</strong> – Authored several Google Ads bidding
                                 algorithms and end to end data pipelines taking into account past bid history and
-                                measures related to user behavior
+                                measures related to user behavior in order to increase conversions by ~10% with no
+                                increase in spend
                             </Segment>
                             <Segment>
                                 <strong>• Customer Lifetime Value Modeling</strong> – Implemented regression and
