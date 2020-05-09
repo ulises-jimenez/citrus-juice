@@ -111,6 +111,16 @@ export default class ResumeHeader extends Component {
                                         </a>
                                     </p>
                                     <p>
+                                        <a href='https://www.github.com/ulises-jimenez' target='_blank'
+                                           rel='noopener noreferrer'>
+                                            <Icon name='github alternate'
+                                                  size='large'
+                                                  color='violet'
+                                            />
+                                            github profile
+                                        </a>
+                                    </p>
+                                    <p>
                                         <Flag name='us'/>US Citizen
                                     </p>
                                 </Card.Description>
