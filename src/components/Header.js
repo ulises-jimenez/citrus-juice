@@ -68,7 +68,7 @@ export default class ResumeHeader extends Component {
                               centered={true}
                               raised={true}
                         >
-                            <h2 style={headerCenteringStyle}>{this.state.name}<Popup
+                            <h2 style={headerCenteringStyle}>{this.state.name} <Popup
                                 trigger={<Icon name='info circle' size='small' color='violet'/>}
                             >
                                 {this.getHeaderIconInfo()}

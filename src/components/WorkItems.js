@@ -215,7 +215,7 @@ export default class JobItem extends Component {
                     />
                     <Item.Content>
                         <Item.Header>
-                            Lead Data & Analytics Engineer
+                            Lead Data & Analytics Engineer&nbsp;
                             {this.getBBGTechPopup()}
                         </Item.Header>
                         <Item.Meta><Flag name='de'/> Berlin • November 2018 - Present</Item.Meta>
@@ -248,7 +248,7 @@ export default class JobItem extends Component {
                     />
                     <Item.Content>
                         <Item.Header>
-                            Data Science and Automation Lead
+                            Data Science and Automation Lead&nbsp;
                             {this.getNu3Popup()}
                         </Item.Header>
                         <Item.Meta><Flag name='de'/> Berlin • May 2016 - October 2018</Item.Meta>
@@ -280,7 +280,7 @@ export default class JobItem extends Component {
                     />
                     <Item.Content>
                         <Item.Header>
-                            Data Scientist
+                            Data Scientist&nbsp;
                             {this.getKAYAKPopup()}
                         </Item.Header>
                         <Item.Meta><Flag name='de'/> Berlin • August 2015 - April 2016</Item.Meta>
@@ -312,7 +312,7 @@ export default class JobItem extends Component {
                     />
                     <Item.Content>
                         <Item.Header>
-                            Analytics Intern
+                            Analytics Intern&nbsp;
                             {this.getGeophyPopup()}
                         </Item.Header>
                         <Item.Meta><Flag name='nl'/> The Hague, The Netherlands • January 2015 - July 2015</Item.Meta>
