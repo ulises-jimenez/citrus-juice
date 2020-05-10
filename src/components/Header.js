@@ -1,5 +1,4 @@
 import React, {Component} from 'react';
-import Avatar from "avataaars";
 import {Grid, Card, Icon, Popup, Divider, Flag} from 'semantic-ui-react'
 import {Link, BrowserRouter as Router} from "react-router-dom";
 
@@ -76,41 +75,13 @@ export default class ResumeHeader extends Component {
                             </Popup>
 
                             </h2>
-                            <Avatar
-                                avatarStyle={this.state.avatarStyle}
-                                topType={this.state.topType}
-                                accessoriesType={this.state.accessoriesType}
-                                hairColor={this.state.hairColor}
-                                facialHairType={this.state.facialHairType}
-                                clotheType={this.state.clotheType}
-                                clotheColor={this.state.clotheColor}
-                                eyeType={this.state.eyeType}
-                                eyebrowType={this.state.eyebrowType}
-                                mouthType={this.state.mouthType}
-                                skinColor={this.state.skinColor}
-                                style={headerCenteringStyle}
-                            />
                             <Card.Content>
-                                <Card.Header
-                                    textAlign={"center"}>
-                                    {this.state.description}
-                                </Card.Header>
                                 <Card.Description>
-                                    <p>
-                                        Download the paper version&nbsp;<Router>
-                                        <Link to='ulises_resume_2020.pdf'
-                                              target="_blank"
-                                              download>
-                                            here!
-                                        </Link>
-                                    </Router>
-                                    </p>
                                     <p>
                                         <a href='mailto:ulises@ulisesjimenez.com'>
                                             ulises@ulisesjimenez.com
                                         </a>
-                                    </p>
-                                    <p>
+                                        &nbsp;•&nbsp;
                                         <a href='https://www.github.com/ulises-jimenez' target='_blank'
                                            rel='noopener noreferrer'>
                                             <Icon name='github alternate'
@@ -119,6 +90,15 @@ export default class ResumeHeader extends Component {
                                             />
                                             github profile
                                         </a>
+                                    </p>
+                                    <p>
+                                        Download the paper version&nbsp;<Router>
+                                        <Link to='ulises_resume_2020.pdf'
+                                              target="_blank"
+                                              download>
+                                            here!
+                                        </Link>
+                                    </Router>
                                     </p>
                                     <p>
                                         <Flag name='us'/>US Citizen
