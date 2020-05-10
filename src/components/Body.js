@@ -13,7 +13,7 @@ export default class ResumeBody extends Component {
                 <ProjectItem
                 />
             )
-        } else if (this.props.activeSection === 'Professional Experience') {
+        } else if (this.props.activeSection === 'Professional') {
             return (
                 <JobItem
                 />

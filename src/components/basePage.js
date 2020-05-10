@@ -9,7 +9,7 @@ export default class BasePage extends Component {
         super(props);
         this.itemClick = this.itemClick.bind(this);
         this.state = {
-            bodyActiveSection: 'Professional Experience'
+            bodyActiveSection: 'Professional'
         };
     }
 
@@ -24,7 +24,7 @@ export default class BasePage extends Component {
                     name='Ulises Jimenez'
                     description={'I\'m a software and data enthusiast'}
                 />
-                <ResumeBodyMenu menuOptions={['Web Projects', 'Professional Experience', 'Education']}
+                <ResumeBodyMenu menuOptions={['Web Projects', 'Professional', 'Education']}
                                 activeSection={this.state.bodyActiveSection}
                                 onMenuChange={this.itemClick}
                 />

@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import {Menu, Container} from 'semantic-ui-react'
 
 const bottomBodyMenuMarginStyle = {
+    marginTop: '20px',
     marginBottom: '20px'
 };
 
@@ -25,9 +26,6 @@ export default class ResumeBodyMenu extends Component {
                        style={bottomBodyMenuMarginStyle}
             >
                 <Menu compact
-                      secondary
-                      pointing
-                      stackable
                       color='violet'
                 >
                     {this.getMenuItems()}
