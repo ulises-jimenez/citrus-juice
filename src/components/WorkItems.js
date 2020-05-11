@@ -5,6 +5,11 @@ const imageCenteringStyle = {
     marginBottom: 'auto'
 };
 
+const listSpacing = {
+    paddingBottom: '2em',
+    fontSize: 16
+};
+
 export default class JobItem extends Component {
 
     getGeophyPopup() {
@@ -224,19 +229,22 @@ export default class JobItem extends Component {
                                 <a href='https://www.berlin-brands-group.com/' target='_blank'
                                    rel='noopener noreferrer'>Berlin Brands Group GmbH</a>
                             </p>
-                            <Segment>
-                                <strong>• Data Engineering</strong> – Established new data science team to create and
-                                implement computing, reporting, and ETL infrastructure
-                            </Segment>
-                            <Segment>
-                                <strong>• Customer Retention and Lifecycle Modeling</strong> - Implemented
-                                infrastructure to monitor purchase behavior and predict future
-                            </Segment>
-                            <Segment>
-                                <strong>• Price Optimization Application</strong> - Created application to monitor
-                                price discrepancies and model price elasticity among a 5000+ product portfolio across
-                                80+ web shops
-                            </Segment>
+                            <ul>
+                                <li style={listSpacing}><strong>Data Engineering</strong> – Established new data
+                                    science team to create and
+                                    implement computing, reporting, and ETL infrastructure
+                                </li>
+                                <li style={listSpacing}><strong>Customer Retention and Lifecycle Modeling</strong> -
+                                    Implemented
+                                    infrastructure to monitor purchase behavior and predict future
+                                </li>
+                                <li style={listSpacing}><strong>Price Optimization Application</strong> - Created
+                                    application to monitor
+                                    price discrepancies and model price elasticity among a 5000+ product portfolio
+                                    across
+                                    80+ web shops
+                                </li>
+                            </ul>
                         </Item.Description>
                     </Item.Content>
                 </Item>
@@ -256,19 +264,19 @@ export default class JobItem extends Component {
                             <p>
                                 <a href='https://www.nu3.de/' target='_blank' rel='noopener noreferrer'>Nu3 GmbH</a>
                             </p>
-                            <Segment>
-                                <strong>• Automated Bidding Algorithms</strong> – Created bidding algorithms and
-                                infrastucture for customer acquisition
-                            </Segment>
-                            <Segment>
-                                <strong>• Customer Lifetime Value Modeling</strong> – Implemented regression and
-                                classification models to identify high lifetime value customers and customers at high
-                                risk of churning
-                            </Segment>
-                            <Segment>
-                                <strong>• Analysis Automation</strong> – Implemented and maintained dashboards and ETLs
-                                to keep continuous track of key marketing measures
-                            </Segment>
+                            <ul>
+                                <li style={listSpacing}><strong>Automated Bidding Algorithms</strong> – Created
+                                    bidding algorithms and
+                                    infrastucture for customer acquisition
+                                </li>
+                                <li style={listSpacing}><strong>Customer Lifetime Value Modeling</strong> –
+                                    Implemented regression and classification models to identify high lifetime value
+                                    customers and customers at high risk of churning
+                                </li>
+                                <li style={listSpacing}><strong>Analysis Automation</strong> – Implemented and
+                                    maintained dashboards and ETLs to keep continuous track of key marketing measures
+                                </li>
+                            </ul>
                         </Item.Description>
                     </Item.Content>
                 </Item>
@@ -288,19 +296,21 @@ export default class JobItem extends Component {
                             <p>
                                 <a href='https://www.kayak.com/' target='_blank' rel='noopener noreferrer'>KAYAK</a>
                             </p>
-                            <Segment>
-                                <strong>• Automated Bidding Algorithms</strong> – Worked on ETL pipelines, testing,
-                                anomaly detection, and algorithm development in order to automatically manage
-                                AdWords accounts with millions in monthly spend
-                            </Segment>
-                            <Segment>
-                                <strong>• Dashboard Creation</strong> – Created dashboards to keep track of results of
-                                AB testing on the site.
-                            </Segment>
-                            <Segment>
-                                <strong>• Data Engineering</strong> – Created many end to end data pipelines so
-                                stakeholders could see daily or hourly updates on KPIs that impacted their projects
-                            </Segment>
+                            <ul>
+                                <li style={listSpacing}><strong>Automated Bidding Algorithms</strong> – Worked on ETL
+                                    pipelines, testing,
+                                    anomaly detection, and algorithm development in order to automatically manage
+                                    AdWords accounts with millions in monthly spend
+                                </li>
+                                <li style={listSpacing}><strong>Dashboard Creation</strong> – Created dashboards to
+                                    keep track of results of
+                                    AB testing on the site.
+                                </li>
+                                <li style={listSpacing}><strong>Data Engineering</strong> – Created many end to end
+                                    data pipelines so
+                                    stakeholders could see daily or hourly updates on KPIs that impacted their projects
+                                </li>
+                            </ul>
                         </Item.Description>
                     </Item.Content>
                 </Item>
@@ -320,14 +330,18 @@ export default class JobItem extends Component {
                             <p>
                                 <a href='https://www.geophy.com/' target='_blank' rel='noopener noreferrer'>GeoPhy</a>
                             </p>
-                            <Segment>
-                                <strong>• Machine Learning</strong> – Implemented regression and classification models
-                                to valuate commercial real estate assets and portfolios
-                            </Segment>
-                            <Segment>
-                                <strong>• Web Scraping and Data Cleaning</strong> – Wrote data mining and cleaning
-                                programs to collect commercial real estate data
-                            </Segment>
+                            <ul>
+                                <li style={listSpacing}><strong>Machine Learning</strong> – Implemented regression
+                                    and classification
+                                    models
+                                    to valuate commercial real estate assets and portfolios
+                                </li>
+                                <li style={listSpacing}><strong>Web Scraping and Data Cleaning</strong> – Wrote data
+                                    mining and
+                                    cleaning
+                                    programs to collect commercial real estate data
+                                </li>
+                            </ul>
                         </Item.Description>
                     </Item.Content>
                 </Item>
