@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {Item, Segment, Flag, Icon, Popup, Divider, List, Grid} from 'semantic-ui-react'
+import {Item, Flag, Icon, Popup, Divider, List, Grid} from 'semantic-ui-react'
 
 const imageCenteringStyle = {
     marginBottom: 'auto'
