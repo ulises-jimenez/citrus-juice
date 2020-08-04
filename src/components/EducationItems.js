@@ -48,7 +48,7 @@ export default class EducationItem extends Component {
                                     Website</a>
                             </p>
                             <Segment>
-                                <strong>Bachelor of Arts: Global Economics</strong>
+                                <strong>Bachelor of Arts: Global Economics and Mathematics</strong>
                             </Segment>
                         </Item.Description>
                     </Item.Content>

@@ -1,11 +1,20 @@
 import React, {Component} from 'react';
-import {Item, Segment} from 'semantic-ui-react'
+import {Item, Segment, Icon} from 'semantic-ui-react'
 
 const imageCenteringStyle = {
     marginBottom: 'auto'
 };
 
 export default class ProjectItem extends Component {
+
+    getBabyPhoneMonitorHref() {
+        let ua = window.navigator.userAgent
+        if (ua.includes('mac') || ua.includes('ios') || ua.includes('iphone')) {
+            return 'itms-apps://itunes.apple.com/app/apple-store/id1481048538'
+        } else {
+            return 'http://play.google.com/store/apps/details?id=com.raksha.babyphone'
+        }
+    }
 
     getItems() {
         return (
@@ -21,8 +30,14 @@ export default class ProjectItem extends Component {
                         />
                         <Item.Description>
                             <p>
-                                <a href='https://www.ulisesjimenez.com/' target='_blank' rel='noopener noreferrer'>Baby
-                                    Phone</a>
+                                <Icon name={'android'} size={'large'}/>
+                                <a href='http://play.google.com/store/apps/details?id=com.raksha.babyphone'
+                                   target='_blank' rel='noopener noreferrer'>Android App</a>
+                            </p>
+                            <p>
+                                <Icon name={'apple'} size={'large'}/>
+                                <a href='https://apps.apple.com/app/apple-store/id1481048538'
+                                   target='_blank' rel='noopener noreferrer'>iOS App</a>
                             </p>
                             <Segment>
                                 Fun little app that can serve as a baby monitor. Runs on iOS, Android and in the
