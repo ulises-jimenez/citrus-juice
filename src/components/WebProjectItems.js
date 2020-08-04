@@ -7,15 +7,6 @@ const imageCenteringStyle = {
 
 export default class ProjectItem extends Component {
 
-    getBabyPhoneMonitorHref() {
-        let ua = window.navigator.userAgent
-        if (ua.includes('mac') || ua.includes('ios') || ua.includes('iphone')) {
-            return 'itms-apps://itunes.apple.com/app/apple-store/id1481048538'
-        } else {
-            return 'http://play.google.com/store/apps/details?id=com.raksha.babyphone'
-        }
-    }
-
     getItems() {
         return (
             <>
