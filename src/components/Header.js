@@ -1,11 +1,22 @@
 import React, {Component} from 'react';
-import {Grid, Card, Icon, Popup, Divider, Flag} from 'semantic-ui-react'
+import {Grid, Card, Icon, Popup, Divider, Flag, Header, Item} from 'semantic-ui-react'
 import {Link, BrowserRouter as Router} from "react-router-dom";
 
 const headerCenteringStyle = {
     marginLeft: 'auto',
     marginRight: 'auto',
+    marginTop: '1%'
 };
+
+const smallHeaderCenteringStyle = {
+    marginLeft: 'auto',
+    marginRight: 'auto',
+};
+
+const listSpacing = {
+    paddingBottom: '2em',
+    fontSize: 16
+}
 
 export default class ResumeHeader extends Component {
     constructor(props) {
@@ -61,53 +72,48 @@ export default class ResumeHeader extends Component {
         return (
             <Grid stackable>
                 <Grid.Row columns={3}>
-                    <Grid.Column>
+                    <Grid.Column width={3}>
                     </Grid.Column>
-                    <Grid.Column textAlign='center'>
-                        <Card fluid={true}
-                              centered={true}
-                              raised={true}
+                    <Grid.Column textAlign='center'
+                                 width={10}
+                    >
+                        <Item
                         >
-                            <h2 style={headerCenteringStyle}>{this.state.name} <Popup
-                                trigger={<Icon name='info circle' size='small' color='violet'/>}
-                            >
-                                {this.getHeaderIconInfo()}
-                            </Popup>
-
-                            </h2>
-                            <Card.Content>
-                                <Card.Description>
-                                    <p>
-                                        <a href='mailto:ulises@ulisesjimenez.com'>
-                                            ulises@ulisesjimenez.com
-                                        </a>
-                                        &nbsp;•&nbsp;
-                                        <a href='https://www.github.com/ulises-jimenez' target='_blank'
-                                           rel='noopener noreferrer'>
-                                            <Icon name='github alternate'
-                                                  size='large'
-                                                  color='violet'
-                                            />
-                                            github profile
-                                        </a>
-                                    </p>
-                                    <p>
-                                        Download the paper version&nbsp;<Router>
-                                        <Link to='ulises_resume_2020.pdf'
-                                              target="_blank"
-                                              download>
-                                            here!
-                                        </Link>
-                                    </Router>
-                                    </p>
-                                    <p>
-                                        <Flag name='us'/>US Citizen
-                                    </p>
-                                </Card.Description>
-                            </Card.Content>
-                        </Card>
+                            <h1 style={headerCenteringStyle}>
+                                {this.state.name}
+                            </h1>
+                            <h5>{this.state.description}</h5>
+                            <p>
+                                <a href='mailto:me@ulisesjimenez.com'>
+                                    <Icon name='mail outline'
+                                          size='large'
+                                          color='violet'
+                                    />
+                                </a> <a href='https://www.github.com/ulises-jimenez' target='_blank'
+                                        rel='noopener noreferrer'>
+                                <Icon name='github alternate'
+                                      size='large'
+                                      color='violet'
+                                />
+                            </a> <a href='ulises_resume_2020.pdf'
+                                    target="_blank"
+                                    download>
+                                <Icon name='file pdf outline'
+                                      size='large'
+                                      color='violet'
+                                />
+                            </a> <a href='https://www.github.com/ulises-jimenez'
+                                    target="_blank"
+                                    rel='noopener noreferrer'>
+                                <Icon name='linkedin'
+                                      size='large'
+                                      color='violet'
+                                />
+                            </a>
+                            </p>
+                        </Item>
                     </Grid.Column>
-                    <Grid.Column>
+                    <Grid.Column width={3}>
                     </Grid.Column>
                 </Grid.Row>
             </Grid>
