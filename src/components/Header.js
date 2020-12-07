@@ -1,6 +1,5 @@
 import React, {Component} from 'react';
-import {Grid, Card, Icon, Popup, Divider, Flag, Header, Item} from 'semantic-ui-react'
-import {Link, BrowserRouter as Router} from "react-router-dom";
+import {Grid, Icon, Divider, Item} from 'semantic-ui-react'
 
 const headerCenteringStyle = {
     marginLeft: 'auto',
@@ -82,7 +81,8 @@ export default class ResumeHeader extends Component {
                             <h1 style={headerCenteringStyle}>
                                 {this.state.name}
                             </h1>
-                            <h5>{this.state.description}</h5>
+                            <p>{this.state.description}</p>
+                            <p>(510) 359 - 7416</p>
                             <p>
                                 <a href='mailto:me@ulisesjimenez.com'>
                                     <Icon name='mail outline'
