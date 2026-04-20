@@ -88,7 +88,6 @@ export default class ResumeHeader extends Component {
                                 </a></p>
                             <p>
                                 <a href='mailto:me@ulisesjimenez.com'>
-                                    me@ulisesjimenez.com
                                     <Icon name='mail outline'
                                           size='large'
                                           color='violet'
