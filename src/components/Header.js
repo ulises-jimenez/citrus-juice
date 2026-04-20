@@ -82,7 +82,7 @@ export default class ResumeHeader extends Component {
                                 {this.state.name}
                             </h1>
                             <p>{this.state.description}</p>
-                            <p>(510) 359 - 7416</p>
+                            <p>+46 076-771-3728</p>
                             <p>
                                 <a href='mailto:me@ulisesjimenez.com'>
                                     <Icon name='mail outline'
@@ -95,7 +95,7 @@ export default class ResumeHeader extends Component {
                                       size='large'
                                       color='violet'
                                 />
-                            </a> <a href='ulises_resume_2020.pdf'
+                            </a> <a href='ulises_resume_2026.pdf'
                                     target="_blank"
                                     download>
                                 <Icon name='file pdf outline'

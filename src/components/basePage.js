@@ -22,11 +22,11 @@ export default class BasePage extends Component {
         return (
             <div ref={this.contextRef}>
                 <ResumeHeader
-                    name='Ulises Jimenez'
+                    name='Ulises Dubra Jimenez'
                     description={'Hi there, I\'m a software and data professional'}
                 />
                 <Divider/>
-                <ResumeBodyMenu menuOptions={['Web Projects', 'Professional', 'Education']}
+                <ResumeBodyMenu menuOptions={['Professional', 'Education']}
                                 activeSection={this.state.bodyActiveSection}
                                 onMenuChange={this.itemClick}
                 />
