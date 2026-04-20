@@ -82,9 +82,13 @@ export default class ResumeHeader extends Component {
                                 {this.state.name}
                             </h1>
                             <p>{this.state.description}</p>
-                            <p>+46 076-771-3728</p>
+                            <p>+46 076 771 3728</p>
+                            <p><a href='mailto:me@ulisesjimenez.com'>
+                                    me@ulisesjimenez.com
+                                </a></p>
                             <p>
                                 <a href='mailto:me@ulisesjimenez.com'>
+                                    me@ulisesjimenez.com
                                     <Icon name='mail outline'
                                           size='large'
                                           color='violet'
@@ -102,7 +106,7 @@ export default class ResumeHeader extends Component {
                                       size='large'
                                       color='violet'
                                 />
-                            </a> <a href='https://www.github.com/ulises-jimenez'
+                            </a> <a href='https://www.linkedin.com/in/ulises-dubra-jimenez-5803019a/'
                                     target="_blank"
                                     rel='noopener noreferrer'>
                                 <Icon name='linkedin'

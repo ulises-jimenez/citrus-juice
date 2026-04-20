@@ -327,9 +327,6 @@ export default class JobItem extends Component {
                         </Item.Header>
                         <Item.Meta><Flag name='nl'/> The Hague, The Netherlands • January 2015 - July 2015</Item.Meta>
                         <Item.Description>
-                            <p>
-                                <a href='https://www.geophy.com/' target='_blank' rel='noopener noreferrer'>GeoPhy</a>
-                            </p>
                             <ul>
                                 <li style={listSpacing}><strong>Machine Learning</strong> – Implemented regression
                                     and classification
